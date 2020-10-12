@@ -24,7 +24,8 @@
 
 ## Mock-up
 **Home Page**
-<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true" alt="drawing" width="100"/>
+
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true" alt="home page" width="200"/>
 
 **Store Page**
 
