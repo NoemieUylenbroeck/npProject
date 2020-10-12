@@ -23,6 +23,30 @@
 9. Newsletter (order confirmation ?)
 
 ## Mock-up
+**Home Page**
+
+
+**Store Page**
+
+
+**Products/Reviews Page**
+
+
+**Contact Page**
+
+
+**Calendar Page**
+
+
+**Manage your account Page**
+
+
+**Basket Page**
+
+
+**Sign In/Up Page**
+
+
 
 ## Graphical charter
 
