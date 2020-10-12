@@ -25,35 +25,35 @@
 ## Mock-up
 **Home Page**
 
-<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true" alt="home page" width="200"/>
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true" alt="home page" width="250"/>
 
 **Store Page**
 
-![store page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Storepage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Storepage.jpg?raw=true" alt="home page" width="250"/>
 
 **Products/Reviews Page**
 
-![products page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Productpage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Productpage.jpg?raw=true" alt="home page" width="250"/>
 
 **Contact Page**
 
-![contact page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Contactpage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Contactpage.jpg?raw=true" alt="home page" width="250"/>
 
 **Calendar Page**
 
-![calendar page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Calendarpage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Calendarpage.jpg?raw=true" alt="home page" width="250"/>
 
 **Manage your account Page**
 
-![account page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/accountpage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/accountpage.jpg?raw=true" alt="home page" width="200"/>
 
 **Basket Page**
 
-![basket page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Basketpage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Basketpage.jpg?raw=true" alt="home page" width="250"/>
 
 **Sign In/Up Page**
 
-![sign In/Up page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/signInUppage.jpg?raw=true)
+<img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/signInUppage.jpg?raw=true" alt="home page" width="250"/>
 
 
 ## Graphical charter
