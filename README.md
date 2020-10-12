@@ -5,7 +5,7 @@
 
 **Team challenge:** Solo
 
-**Technologies used:** HTML, CSS, Node.js
+**Technologies used:** HTML, CSS, Node.js, MongoDB
 
 
 ## Project
@@ -26,7 +26,7 @@
 
 ## Graphical charter
 
-## Databases
+## Database
 | Collection Name | Field 1 | Field 2 | Field 3| Field 4 | Field 5|
 |---|---|---|---|---|---|
 | Users | users_id | username | password | email |subscribed?|
