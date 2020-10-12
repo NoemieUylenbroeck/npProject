@@ -24,28 +24,28 @@
 
 ## Mock-up
 **Home Page**
-
+![home page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true)
 
 **Store Page**
-
+![store page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Storepage.jpg?raw=true)
 
 **Products/Reviews Page**
-
+![products page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Productpage.jpg?raw=true)
 
 **Contact Page**
-
+![contact page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Contactpage.jpg?raw=true)
 
 **Calendar Page**
-
+![calendar page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Calendarpage.jpg?raw=true)
 
 **Manage your account Page**
-
+![account page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/accountpage.jpg?raw=true)
 
 **Basket Page**
-
+![basket page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Basketpage.jpg?raw=true)
 
 **Sign In/Up Page**
-
+![sign In/Up page](https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/signInUppage.jpg?raw=true)
 
 
 ## Graphical charter
