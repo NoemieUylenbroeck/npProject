@@ -23,6 +23,8 @@
 9. Newsletter (order confirmation ?)
 
 ## Mock-up
+<p float="left">
+  
 **Home Page**
 
 <img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Homepage.jpg?raw=true" alt="home page" width="250"/>
@@ -34,6 +36,8 @@
 **Products/Reviews Page**
 
 <img src="https://github.com/NoemieUylenbroeck/npProject/blob/main/public/Images/readme/Productpage.jpg?raw=true" alt="home page" width="250"/>
+
+</p>
 
 **Contact Page**
 
