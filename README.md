@@ -22,7 +22,7 @@
 8. Contact form
 9. Newsletter (order confirmation ?)
 
-## Designs (schemas)
+## Mock-up
 
 ## Graphical charter
 
