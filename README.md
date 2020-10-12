@@ -28,6 +28,7 @@
 
 ## Databases
 | Collection Name | Field 1 | Field 2 | Field 3| Field 4 | Field 5|
+|---|---|---|---|---|---|
 | Users | users_id | username | password | email |subscribed?|
 | Orders | orders_id | user_id | basket(object of products_id) | / | / |
 | Products | products_id | description | price | review_id | / |
