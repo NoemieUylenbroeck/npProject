@@ -10,6 +10,7 @@
 
 ## Project
 
+It will be a website about a little shop (Name in progress) that sells homemade cooking and drinks (tea, coffee,..). Customers will have their account and they will be able to order products on the website (and then pick it up at the shop), to leave reviews on the products and to see a calendar about the events the shop promotes.
 
 ## Functionalities (in order of priorities)
 1. Sign up, sign in, session sytem
@@ -58,6 +59,8 @@
 
 
 ## Graphical charter
+
+In progress. It will be something light. The footer and the navbar will be recurring.
 
 ## Database
 | Collection Name | Field 1 | Field 2 | Field 3| Field 4 | Field 5|
