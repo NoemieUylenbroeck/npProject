@@ -62,7 +62,7 @@ It will be a website about a little shop (Name in progress) that sells homemade 
 
 ## Graphical charter
 
-In progress. It will be something light. The footer and the navbar will be recurring.
+In progress. It will be something light with white, green and beige. The footer and the navbar will be recurring.
 
 ## Database
 | Collection Name | Field 1 | Field 2 | Field 3| Field 4 | Field 5|
