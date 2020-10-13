@@ -7,6 +7,8 @@
 
 **Technologies used:** HTML, CSS, Node.js, MongoDB
 
+**Chosen theme:** promoting handicraft
+
 
 ## Project
 
