@@ -5,9 +5,9 @@
 
 **Team challenge:** Solo
 
-**Technologies used:** HTML, CSS, Node.js, MongoDB
+**Technologies used:** Node.js, MongoDB 
 
-**Chosen theme:** promoting handicraft
+**Chosen theme:** Promoting handicraft
 
 
 ## Project
