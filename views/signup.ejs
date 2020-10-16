@@ -1,0 +1,17 @@
+<%- include('head.ejs'); %>
+<body>
+    <%- include('navbar.ejs'); %>
+<h1>Sign Up</h1>
+<form action="../signup" method="POST">
+    <input type="text" placeholder="Username" name="username" required autofocus>
+    <input type="email" placeholder="Email address" name="email" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <p>Do you want to subscribe to the newsletter ?</p>
+    <input type="radio" id="yes" name="newsletter" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="newsletter" value="no">
+    <label for="no">No</label>
+    <input type="submit" value="Sign Up">
+</form>
+</body>
+</html>
