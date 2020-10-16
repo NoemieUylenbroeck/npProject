@@ -9,6 +9,7 @@ const accountController=require('./controllers/accountController');
 const signInController=require('./controllers/signinController');
 const signUpController=require('./controllers/signupController');
 const signOutController=require('./controllers/signoutController');
+const ajouterProductController=require('./controllers/ajouterproductController');
 
 // Take the right controller with the fonction needed
 router.get('/', homeController.display );
@@ -22,5 +23,7 @@ router.post('/signin', signInController.signin );
 router.get('/signup', signUpController.display );
 router.post('/signup', signUpController.signup );
 router.get('/signout', signOutController.signout );
+router.get('/formproduct', ajouterProductController.display );
+router.post('/formproduct', ajouterProductController.ajouter );
 
 module.exports = router;
