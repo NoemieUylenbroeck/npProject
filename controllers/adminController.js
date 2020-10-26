@@ -1,5 +1,5 @@
-let adminModel = require("../models/adminModel");
-let Product = adminModel.Product;
+let productsModel = require("../models/productsModel");
+let Product = productsModel.Product;
 
 module.exports={
     //Function to display signup.ejs
