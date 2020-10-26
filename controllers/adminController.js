@@ -2,13 +2,13 @@ let adminModel = require("../models/adminModel");
 let Product = adminModel.Product;
 
 module.exports={
-     //Function to display signup.ejs
-     display:function(req, res) {
+    //Function to display signup.ejs
+    display:function(req, res) {
         let username = req.session.username;
         res.render('../views/admin', {username: username});
    },
-   //Function to register an user (without passport)
-   addproduct: async function(req, res){
+    //Function to register an user (without passport)
+    addproduct: async function(req, res){
     let product = await Product.findOne({ name: req.body.name });
     if (product) {
         return res.status(400).send('That product already exists!');

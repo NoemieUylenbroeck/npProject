@@ -1,13 +1,18 @@
 <a href="/home">home</a>
 <a href="/shop">shop</a>
 <a href="/calendar">calendar</a>
-<a href="/comntact">contact</a>
-<a href="/signin">signin</a>
-<a href="/signup">signup</a>
-<a href="/signout">signout</a>
-<a href="/account">
-    <%if (username) { %>
+<a href="/contact">contact</a>
+
+<% if (!username) { %>
+  <a href="/signin">signin</a>
+  <a href="/signup">signup</a>
+<% } %>
+
+<%if (username) { %>
+  <a href="/signout">signout</a>
+  <a href="/account">
     <%= username%>
-  <% } %>
-</a>
+  </a>
+<%}%>
+  
 <a href="/admin">formproduct</a>
