@@ -26,6 +26,7 @@ router.post('/signup', signUpController.signup );
 router.get('/signout', signOutController.signout );
 router.get('/admin', adminController.display );
 router.post('/adminaddproduct', adminController.addproduct );
-router.get('/product:name', productController.display );
+router.get('/product/:name', productController.display );
+router.post('/addreview/:name', productController.addreview );
 
 module.exports = router;

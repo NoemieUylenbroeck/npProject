@@ -1,12 +1,22 @@
 <%- include('head.ejs'); %>
 <body>
     <%- include('navbar.ejs'); %>
-<h1>shop</h1>
 <section>
-        <h2><%= productsValues[i].name%></h2>
-        <p><%= productsValues[i].description%></p>
-        <p><%= productsValues[i].price%>€</p>
-        <p>Reviews</p>
+    <h1><%= product.name%></h1>
+    <p><%= product.description%></p>
+    <p><%= product.price%></p>
+    <button>Add</button>
+</section>
+</section>
+    <h2>Reviews</h2>
+    <%for(i=0; i < review.length; i++){%>
+        <p><%=review[i].userId%></p>
+        <p><%= review[i].review%></p>
+    <%}%>
+        <form action="../addreview/<%= product.name%>" method="POST">
+            <input type="textarea" placeholder="Write your review" name="review" required>
+            <input type="submit" value="Submit">
+        </form>
 </section>
 </body>
 </html>

@@ -7,7 +7,7 @@
         <h2><%= productsValues[i].name%></h2>
         <p><%= productsValues[i].description%></p>
         <p><%= productsValues[i].price%>€</p>
-        <a href="product">See more</a>
+        <a href="product/<%= productsValues[i].name%>">See more</a>
         <button>Add</button>
     <%}%>
 </section>
