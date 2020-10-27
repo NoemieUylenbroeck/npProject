@@ -10,8 +10,8 @@
 </section>
     <h2>Reviews</h2>
     <%for(i=0; i < review.length; i++){%>
-        <p><%=review[i].userId%></p>
-        <p><%= review[i].review%></p>
+        <p><%=review[i].username%> :</p>
+        <p>"<%= review[i].review%>"</p>
     <%}%>
         <form action="../addreview/<%= product.name%>" method="POST">
             <input type="textarea" placeholder="Write your review" name="review" required>
