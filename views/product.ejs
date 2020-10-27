@@ -3,13 +3,10 @@
     <%- include('navbar.ejs'); %>
 <h1>shop</h1>
 <section>
-    <%for(i=0; i < productsValues.length; i++){%>
         <h2><%= productsValues[i].name%></h2>
         <p><%= productsValues[i].description%></p>
         <p><%= productsValues[i].price%>€</p>
-        <a href="product">See more</a>
-        <button>Add</button>
-    <%}%>
+        <p>Reviews</p>
 </section>
 </body>
 </html>

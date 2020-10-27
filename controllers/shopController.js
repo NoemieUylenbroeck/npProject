@@ -9,7 +9,8 @@ module.exports={
             if (err) {
                 return handleError(err);
             } else {
-                res.render('../views/shop', {username: username, findProducts: products});
+                productsValues = Object.values(products);
+                res.render('../views/shop', {username: username, productsValues: productsValues});
             }
         });
    }
