@@ -2,7 +2,13 @@
 <body>
     <%- include('navbar.ejs'); %>
 <h1>Manage your Account</h1>
-<h2>Your reviews</h2>
-<p></p>
+<section>
+    <h2>Your reviews</h2>
+    <%for(i=0; i < review.length; i++){%>
+        <!-- Mettre le nom du produit en lien vers la page du produit -->
+        <p><%= review[i].productId%></p>
+        <p><%= review[i].review%></p>
+    <%}%>
+</section>
 </body>
 </html>

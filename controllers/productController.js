@@ -22,9 +22,9 @@ module.exports={
         if(!username){
             res.redirect('../signin')
         } else{
-            let reviewProductId= (await Product.findOne({name:productName},{'_id':0, 'productId':1},).exec()).productId;
-            let reviewUsername=(await User.findOne({username:username},{'_id':0, 'username':1},).exec()).username;
-            let reviewUserId= (await User.findOne({username:username},{'_id':0, 'userId':1},).exec()).userId;
+            let reviewProductId= (await Product.findOne({name:productName}).exec()).productId;
+            let reviewUsername=(await User.findOne({username:username}).exec()).username;
+            let reviewUserId= (await User.findOne({username:username}).exec()).userId;
             // Insert the new review
             review = new Review({
                 userId:reviewUserId,
