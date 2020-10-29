@@ -11,6 +11,7 @@ const signUpController=require('./controllers/signupController');
 const signOutController=require('./controllers/signoutController');
 const adminController=require('./controllers/adminController');
 const productController=require('./controllers/productController');
+const cartController=require('./controllers/cartController');
 
 // Take the right controller with the fonction needed
 router.get('/', homeController.display );
@@ -28,5 +29,6 @@ router.get('/admin', adminController.display );
 router.post('/adminaddproduct', adminController.addproduct );
 router.get('/product/:name', productController.display );
 router.post('/addreview/:name', productController.addreview );
+router.post('/cart/:name', cartController.addProductToCart );
 
 module.exports = router;
