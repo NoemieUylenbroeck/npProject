@@ -10,7 +10,7 @@ const currentOrderSchema = new mongoose.Schema({
         required:true,
     },
     orderedproducts:{
-        type:,
+        type:Array,
         required:true,
     }
 });

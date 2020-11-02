@@ -20,6 +20,7 @@ router.get('/shop', shopController.display );
 router.get('/calendar', calendarController.display );
 router.get('/contact', contactController.display );
 router.get('/account', accountController.display );
+router.get('/accountdeletereview/:reviewid', accountController.deletereview );
 router.get('/signin', signInController.display );
 router.post('/signin', signInController.signin );
 router.get('/signup', signUpController.display );
