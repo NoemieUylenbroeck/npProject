@@ -31,5 +31,6 @@ router.post('/adminaddproduct', adminController.addproduct );
 router.get('/product/:name', productController.display );
 router.post('/addreview/:name', productController.addreview );
 router.post('/cart/:name', cartController.addProductToCart );
+router.get('/cart', cartController.display);
 
 module.exports = router;

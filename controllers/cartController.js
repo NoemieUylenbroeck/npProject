@@ -6,7 +6,18 @@ let productsModel = require("../models/productsModel");
 let Product = productsModel.Product;
 
 module.exports={
-    //Function to display shop.ejs
+    display:function(req,res){
+        let username = req.session.username;
+        CurrentOrder.find({username:username},{'_id':0, 'orderedproduct':1, 'numberproduct':1}, function (err, currentOrder){
+            if (err) {
+                return handleError(err);
+            } else {
+                let cart = Object.values(currentOrder);
+                res.render('../views/cart', {username: username,cart: cart});
+            }
+        });
+    },
+
     addProductToCart: async function(req, res) {
         let username = req.session.username;
         if(!username){
@@ -18,7 +29,8 @@ module.exports={
             let currentOrder = new CurrentOrder({
                 username: username,
                 userId:userId,
-                orderedproducts : await Product.findOne({productId:req.body.productId}).exec(),
+                orderedproduct:productName,
+                numberproduct:number,
             });
             await currentOrder.save();
             console.log(currentOrder)

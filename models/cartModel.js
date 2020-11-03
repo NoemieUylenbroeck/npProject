@@ -9,8 +9,12 @@ const currentOrderSchema = new mongoose.Schema({
         type:Number,
         required:true,
     },
-    orderedproducts:{
-        type:Array,
+    orderedproduct:{
+        type:String,
+        required:true,
+    },
+    numberproduct:{
+        type:Number,
         required:true,
     }
 });
