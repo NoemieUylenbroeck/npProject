@@ -35,5 +35,13 @@ module.exports={
             await currentOrder.save();
             console.log(currentOrder)
         }
+    },
+    addnumbercart: function (req,res){
+        let productName = req.params.productname;
+        let number = req.body.number;
+
+    },
+    deleteproductcart: function(req,res){
+        let productName = req.params.productname;
     }
 }

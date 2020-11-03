@@ -32,5 +32,8 @@ router.get('/product/:name', productController.display );
 router.post('/addreview/:name', productController.addreview );
 router.post('/cart/:name', cartController.addProductToCart );
 router.get('/cart', cartController.display);
+router.get('/cart/deleteproduct/:productname%>', cartController.addnumbercart);
+router.get('/cart/addnumberproduct/:productname%>', cartController.deleteproductcart);
+
 
 module.exports = router;
