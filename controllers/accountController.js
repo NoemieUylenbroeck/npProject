@@ -23,5 +23,8 @@ module.exports={
            }
        });
        res.redirect('../account');
+   },
+   updatereview:function(req,res){
+       //à faire
    }
 }

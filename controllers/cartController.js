@@ -33,15 +33,22 @@ module.exports={
                 numberproduct:number,
             });
             await currentOrder.save();
-            console.log(currentOrder)
         }
     },
-    addnumbercart: function (req,res){
+    addnumbercart: async function (req,res){
         let productName = req.params.productname;
         let number = req.body.number;
+        let currentOrderNumber = (await CurrentOrder.findOne({orderedproduct:productName}).exec()).numberproduct;
+        let newCurrentOrderNumber = parseInt(number) + parseInt(currentOrderNumber);
+        await CurrentOrder.updateOne({orderedproduct:productName}, {numberproduct:newCurrentOrderNumber});
+        res.redirect('/cart');
 
     },
     deleteproductcart: function(req,res){
         let productName = req.params.productname;
+        CurrentOrder.deleteOne({orderedproduct:productName}, function (err) {
+            if (err) return handleError(err);
+          });
+        res.redirect('/cart');
     }
 }
