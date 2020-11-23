@@ -68,6 +68,6 @@ In progress. It will be something light with white, green and beige. The footer 
 | Collection Name | Field 1 | Field 2 | Field 3| Field 4 | Field 5|
 |---|---|---|---|---|---|
 | Users | users_id | username | password | email |subscribed?|
-| Orders | orders_id | user_id | basket(object of products_id) | / | / |
+| Orders | orders_id | user_id | orderedproduct | / | / |
 | Products | name | products_id | description | price | / |
 | Reviews | reviews_id | user_id | product_id | review | / |
