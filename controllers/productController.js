@@ -10,10 +10,11 @@ module.exports={
     display: async function(req, res) {
         let productName = req.params.name;
         let username = req.session.username;
+        let admin = req.session.admin;
         let product = await Product.findOne({name:productName}).exec();
         let productIdReview = product.productId;
         let review = await Review.find({productId:productIdReview}).exec();
-        res.render('../views/product', {username: username, product: product, review:review});
+        res.render('../views/product', {username: username, admin:admin, product: product, review:review});
     },
 
     addreview:async function(req, res){
@@ -23,12 +24,14 @@ module.exports={
             res.redirect('../signin')
         } else{
             let reviewProductId= (await Product.findOne({name:productName}).exec()).productId;
+            let reviewProductName= (await Product.findOne({name:productName}).exec()).name;
             let reviewUsername=(await User.findOne({username:username}).exec()).username;
             let reviewUserId= (await User.findOne({username:username}).exec()).userId;
             // Insert the new review
             review = new Review({
                 userId:reviewUserId,
                 productId:reviewProductId,
+                productName:reviewProductName,
                 username:reviewUsername,
                 review:req.body.review
             });

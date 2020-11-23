@@ -8,23 +8,21 @@ module.exports={
     //Function to display contact.ejs
     display: async function(req, res) {
         let username = req.session.username;
+        let admin = req.session.admin;
         let reviewUserId= (await User.findOne({username:username}).exec()).userId;
         let review = await Review.find({userId:reviewUserId}).exec();
-        res.render('../views/account', {username: username, review:review});
+        res.render('../views/account', {username: username, admin:admin, review:review});
    },
    deletereview: function(req,res){
-       let deleteReviewId=req.params.reviewid;
-       console.log(deleteReviewId);
-       Review.deleteOne({reviewId: deleteReviewId}, function(err){
-           if(err){
-               return console.log(err);
-           } else{
-               return console.log("removed");
-           }
-       });
+       let reviewId=req.params.reviewId;
+       Review.deleteOne({reviewId:reviewId}, function (err) {
+        if (err) return handleError(err);
+    });
+      console.log("removed :" + reviewId);
        res.redirect('../account');
    },
+   
    updatereview:function(req,res){
-       //à faire
+      
    }
 }

@@ -8,7 +8,9 @@
   <a href="/signup">signup</a>
 <% } %>
 
+<% if (admin=="yes"){ %>
 <a href="/admin">admin page</a>
+<% } %>
 
 <%if (username) { %>
   <a href="/account">
@@ -17,4 +19,3 @@
   <a href="/cart">cart</a>
   <a href="/signout">signout</a>
 <%}%>
-  

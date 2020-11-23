@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const currentOrderSchema = new mongoose.Schema({
+const cartSchema = new mongoose.Schema({
     username:{
         type:String,
         required:true,
@@ -15,10 +15,15 @@ const currentOrderSchema = new mongoose.Schema({
     },
     numberproduct:{
         type:Number,
+        min:1,
+        required:true,
+    },
+    totalprice:{
+        type:Number,
         required:true,
     }
 });
 
-const CurrentOrder = mongoose.model("CurrentOrder", currentOrderSchema);
+const Cart = mongoose.model("Cart", cartSchema);
 
-exports.CurrentOrder = CurrentOrder;
+exports.Cart = Cart;

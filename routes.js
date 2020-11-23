@@ -20,7 +20,7 @@ router.get('/shop', shopController.display );
 router.get('/calendar', calendarController.display );
 router.get('/contact', contactController.display );
 router.get('/account', accountController.display );
-router.get('/accountdeletereview/:reviewid', accountController.deletereview );
+router.get('/accountdeletereview/:reviewId', accountController.deletereview );
 router.get('/signin', signInController.display );
 router.post('/signin', signInController.signin );
 router.get('/signup', signUpController.display );
@@ -28,12 +28,15 @@ router.post('/signup', signUpController.signup );
 router.get('/signout', signOutController.signout );
 router.get('/admin', adminController.display );
 router.post('/adminaddproduct', adminController.addproduct );
+router.get('/admindeleteproduct/:productId', adminController.deleteproduct);
+router.get('/admindeletereview/:reviewId', adminController.deletereview);
 router.get('/product/:name', productController.display );
 router.post('/addreview/:name', productController.addreview );
 router.post('/cart/:name', cartController.addProductToCart );
 router.get('/cart', cartController.display);
 router.get('/cartdeleteproduct/:productname', cartController.deleteproductcart);
 router.post('/cartadd/:productname', cartController.addnumbercart);
+router.get('/order', cartController.order);
 
 
 module.exports = router;

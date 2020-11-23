@@ -17,7 +17,12 @@ const userSchema = new mongoose.Schema({
     newsletter:{
         type:String,
         required:true,
-    }
+    },
+    admin:{
+        type:String,
+        required:true,
+        default:"no",
+    },
 });
 
 userSchema.plugin(autoIncrement.plugin, { model: 'User', field: 'userId', startAt: 1 });

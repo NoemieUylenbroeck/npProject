@@ -6,7 +6,8 @@ module.exports={
     //Function to display signup.ejs
     display:function(req, res) {
         let username = req.session.username;
-        res.render('../views/signup', {username: username});
+        let admin = req.session.admin;
+        res.render('../views/signup', {username: username, admin:admin});
    },
    //Function to register an user (without passport)
    signup: async function(req, res){
@@ -19,7 +20,7 @@ module.exports={
                 username: req.body.username,
                 email: req.body.email,
                 password: req.body.password,
-                newsletter:req.body.newsletter
+                newsletter:req.body.newsletter,
             });
             const salt = await bcrypt.genSalt(10);
             user.password = await bcrypt.hash(user.password, salt);

@@ -3,6 +3,11 @@ const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
 const autoIncrement = require('mongoose-auto-increment');
 const session=require('express-session');
+const http = require('http');
+const formidable = require('formidable');
+const https = require("https");
+const fs = require('fs');
+
 const app = express();
 
 // Session

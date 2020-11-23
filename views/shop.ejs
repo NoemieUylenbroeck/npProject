@@ -5,6 +5,7 @@
 <section>
     <%for(i=0; i < productsValues.length; i++){%>
         <h2><%= productsValues[i].name%></h2>
+        <img src="/Images/products/<%= productsValues[i].image%>.jpg" alt="<%= productsValues[i].image%>" width="300" height="200">
         <p><%= productsValues[i].description%></p>
         <p><%= productsValues[i].price%>€</p>
         <a href="product/<%= productsValues[i].name%>">See more</a>

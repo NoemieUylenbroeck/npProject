@@ -6,7 +6,7 @@
     <h2>Your reviews</h2>
     <%for(i=0; i < review.length; i++){%>
         <!-- Mettre le nom du produit en lien vers la page du produit -->
-        <p><%= review[i].productId%></p>
+        <p><a href="product/<%= review[i].productName%>"><%= review[i].productName%></a></p>
         <p><%= review[i].review%></p>
         <a href="../accountdeletereview/<%=review[i].productId%>">delete</a>
     <%}%>

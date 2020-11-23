@@ -1,6 +1,18 @@
 <%- include('head.ejs'); %>
 <body>
     <%- include('navbar.ejs'); %>
-    <h1>Home</h1>
+    <h1>Welcome to Tea-Rex</h1>
+    <img src="/Images/logo.png" alt="TEA-REX>" width="500" >
+    <h2>The perfect cup of tea ?</h2>
+    <p>The temperature in <%=query%> is <%=temp%> degrees Celsius.</p>
+    <%if(temp>30){%>
+        <p>It's so hot ! We propose the Mint Tea to cool down !</p>
+        <%}else if (temp<=20 && temp>10){%>
+        <p> We propose the Jasmine tea, a light taste!</p>
+        <%}else if (temp<=10 && temp>0){%>
+        <p> Drink the Earl Grey to stay comfy</p>
+        <%}else{%>
+        <p> We propose the Chamomille tea to survive the winter!</p>
+        <%}%>
 </body>
 </html>
