@@ -18,12 +18,10 @@ It will be a website about a little shop (Name in progress) that sells homemade 
 1. Sign up, sign in, session sytem
 2. Online order (basket system)
 3. Product reviews
-4. Searchbar
-5. Manage your account
-6. Forgotten password
-7. API (calendar?)
-8. Contact form
-9. Newsletter (order confirmation ?)
+4. Manage your account
+5. Forgotten password
+6. API (calendar?)
+7. Contact form
 
 ## Mock-up
   
